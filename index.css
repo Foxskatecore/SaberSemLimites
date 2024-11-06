@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 * {
     margin: 0;
@@ -203,3 +204,210 @@ footer a {
     display: block;                 /* Remove espaços abaixo da imagem */
     margin: center;                   /* Centraliza a imagem no slide */
 }
+=======
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;                  /* Usar Flexbox para layout */
+    align-items: center;           /* Alinhar verticalmente ao centro */
+    padding: 10px;                 /* Espaçamento interno do header */
+}
+
+.imagem {
+    max-width: 100px;              /* Limitar o tamanho da imagem */
+    margin-right: 15px;            /* Espaçamento à direita da imagem */
+}
+
+.logo {
+    font-size: 28px;               /* Tamanho da fonte do logo */
+    margin-right: auto;            /* Usar auto para empurrar os itens à direita */
+}
+
+nav {
+    display: flex;                  /* Usar Flexbox para os links */
+    margin-right: 10px;            /* Espaçamento à direita dos links de navegação */
+}
+
+nav a {
+    margin: 0 20px;                /* Espaçamento entre os links */
+    text-decoration: none;          /* Remover sublinhado dos links */
+    font-size: 15px; 
+}
+
+.search {
+    display: flex;                  /* Usar Flexbox para o campo de busca */
+    align-items: center;           /* Alinhar verticalmente ao centro */
+}
+
+.search label {
+    margin-right: 5px;             /* Espaçamento à direita do label */
+}
+
+
+.banners {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.banner {
+    background-color: #ddd;
+    padding: 5px;
+    width: 5%;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.menu {
+    width: 20%;
+    background-color: #eaeaea;
+    color: #111;
+    padding: 20px;
+}
+
+.menu h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+.content {
+    width: 75%;
+    margin-left: 20px;
+}
+
+.content .intro {
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course {
+    background-color: #fff;
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course h3 {
+    margin: 10px 0;
+}
+
+.course-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.video-container {
+    width: 100%; /* Faz o contêiner ocupar 100% da largura do seu espaço pai */
+    max-width: 900px; /* Define um tamanho máximo para o vídeo */
+    aspect-ratio: 16 / 9; /* Mantém a proporção 16:9 do vídeo */
+}
+
+.video-container iframe {
+    width: 100%; /* O vídeo ocupará toda a largura do contêiner */
+    height: 100%; /* Ajuste automático de altura para manter a proporção */
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.course-image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+/* Estilos do Carrossel */
+.carousel-container {
+    overflow: hidden;
+    width: 100%;                     /* Ajustar para 100% para ocupar toda a largura */
+    max-width: 900px;               /* Define um tamanho máximo para o carrossel */
+    margin: auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.9s ease-in-out;
+    width: calc(100% * 5);           /* Número total de slides (5 neste caso) */
+}
+
+.carousel-slide {
+    flex: 0 0 calc(100% / 3);       /* Define a largura de cada slide para que três fiquem visíveis ao mesmo tempo */
+    box-sizing: border-box;
+    margin: 0;                      /* Remove a margem entre os slides */
+    padding: 0;                     /* Remove o padding se houver */
+}
+
+.carousel-slide img {
+    width: 30%;                    /* Ajustar a imagem para 100% da largura do slide */
+    height: auto;                   /* Mantém a proporção da imagem */
+    /*max-width: 300px;               /* Define um tamanho máximo para cada imagem */
+    display: block;                 /* Remove espaços abaixo da imagem */
+    margin: center;                   /* Centraliza a imagem no slide */
+}
+>>>>>>> 2cdf174fe403a5a3fb63296ba3518936201dc70c
