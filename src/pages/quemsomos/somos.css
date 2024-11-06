@@ -1,0 +1,97 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;                  /* Usar Flexbox para layout */
+    align-items: center;           /* Alinhar verticalmente ao centro */
+    padding: 10px;                 /* Espaçamento interno do header */
+}
+
+.imagem {
+    max-width: 100px;              /* Limitar o tamanho da imagem */
+    margin-right: 15px;            /* Espaçamento à direita da imagem */
+}
+
+.logo {
+    font-size: 28px;               /* Tamanho da fonte do logo */
+    margin-right: auto;            /* Usar auto para empurrar os itens à direita */
+}
+
+nav {
+    display: flex;                  /* Usar Flexbox para os links */
+    margin-right: 10px;            /* Espaçamento à direita dos links de navegação */
+}
+
+nav a {
+    margin: 0 20px;                /* Espaçamento entre os links */
+    text-decoration: none;          /* Remover sublinhado dos links */
+    font-size: 15px; 
+}
+
+.search {
+    display: flex;                  /* Usar Flexbox para o campo de busca */
+    align-items: center;           /* Alinhar verticalmente ao centro */
+}
+
+.search label {
+    margin-right: 5px;             /* Espaçamento à direita do label */
+}
+
+
+
+
+.about-section {
+    max-width: auto;             /* Limitar a largura máxima da seção para melhorar a legibilidade */
+    margin: 40px auto;            /* Centralizar a seção horizontalmente e dar uma margem vertical */
+    padding: 20px;                /* Adicionar espaçamento interno */
+    background-color: #ffffff;    /* Cor de fundo branco para contraste */
+    border-radius: 8px;           /* Bordas arredondadas para visual mais agradável */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+}
+
+.about-section h2 {
+    font-size: 28px;              /* Tamanho da fonte do título */
+    margin-bottom: 20px;          /* Espaço abaixo do título */
+    color: #333333;               /* Cor do texto */
+    text-align: center;           /* Centralizar o título */
+}
+
+.about-section p {
+    font-size: 18px;              /* Tamanho da fonte do parágrafo */
+    line-height: 1.8;             /* Altura da linha para melhor legibilidade */
+    color: #555555;               /* Cor do texto para contraste suave */
+    margin-bottom: 15px;          /* Espaço entre os parágrafos */
+    text-align: justify;          /* Justificar o texto para visual mais alinhado */
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}

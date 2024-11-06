@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem somos</title>
+    <link rel="stylesheet" href="/public/css/fonts.css"/>
+    <link rel="stylesheet" href="/public/css/global.css"/>
+    <link rel="stylesheet" href="somos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css" integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/public/assests/fonts/diversity_3_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <img class="imagem" src="/public//assests/images/Saber_Sem_Idade_logo_concept_with_elderly_people_and_technology__no_text__1_-removebg-preview.png">
+        <div class="logo">Saber Sem Idade</div>
+        <nav>
+            <a href="/index.html">Inicio</a>
+            <a href="#">Quem Somos?</a>
+            <a href="/src/pages/certificado/certificados.html">Certificados</a>
+            <a href="#">Fale Conosco</a>
+            <a href="#">Cadastre-se</a>
+        </nav>
+        <div class="search">
+            <label for="search">Pesquisa:</label>
+            <input type="text" id="search" placeholder="O que você quer aprender hoje?">
+        </div>
+    </header>
+
+
+
+    <!-- Seção Quem Somos -->
+    <section class="about-section">
+        <h2>Quem Somos?</h2>
+        <p>Bem-vindo ao Saber Sem Idade! Nosso objetivo é proporcionar uma experiência de aprendizado acessível e envolvente para a terceira idade. Entendemos que muitos de nossos alunos estão iniciando seu contato com a tecnologia, e estamos aqui para tornar essa jornada o mais agradável e descomplicada possível.</p>
+        <p>Oferecemos uma variedade de cursos que abrangem desde informática básica até culinária, dança e muito mais. Nossa plataforma é projetada para ser intuitiva e fácil de navegar, garantindo que todos possam aproveitar ao máximo as oportunidades de aprendizado. No Saber Sem Idade, acreditamos que nunca é tarde para aprender algo novo e enriquecedor.</p> 
+    <!-- Rodapé -->
+    <footer>
+        <a href="#">Redes Sociais</a>
+        <a href="#">Redes Sociais</a>
+        <a href="#">Avaliações</a>
+        <a href="#">Perguntas Frequentes</a>
+        <a href="#">Informações de Contato</a>
+        <a href="#">Termos de Uso e Política de Privacidade</a>
+    </footer>
+</body>
+</html>
+
+<script>
+    let currentPosition = 0;
+    const totalSlides = 5; // Número total de slides
+    const slidesToShow = 3; // Número de slides a serem mostrados por vez
+    const slidesToScroll = 1; // Número de slides para mover em cada rotação
+
+    const track = document.querySelector(".carousel-track");
+
+    function moveCarousel() {
+        // Calcula a nova posição
+        currentPosition += slidesToScroll;
+
+        // Reseta para o início se exceder
+        if (currentPosition >= totalSlides) {
+            currentPosition = 0; // Retorna ao início
+        }
+
+        // Calcula a posição de rolagem em pixels
+        const offset = -(currentPosition * (100 / slidesToShow));
+
+        // Move o carrossel
+        track.style.transform = `translateX(${offset}%)`;
+    }
+
+    // Inicia o carrossel automaticamente a cada 2 segundos
+    setInterval(moveCarousel, 4000);
+</script>
