@@ -1,0 +1,127 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;                  /* Usar Flexbox para layout */
+    align-items: center;           /* Alinhar verticalmente ao centro */
+    padding: 10px;                 /* Espaçamento interno do header */
+}
+
+.imagem {
+    max-width: 100px;              /* Limitar o tamanho da imagem */
+    margin-right: 15px;            /* Espaçamento à direita da imagem */
+}
+
+.logo {
+    font-size: 28px;               /* Tamanho da fonte do logo */
+    margin-right: auto;            /* Usar auto para empurrar os itens à direita */
+}
+
+nav {
+    display: flex;                  /* Usar Flexbox para os links */
+    margin-right: 10px;            /* Espaçamento à direita dos links de navegação */
+}
+
+nav a {
+    margin: 0 20px;                /* Espaçamento entre os links */
+    text-decoration: none;          /* Remover sublinhado dos links */
+    font-size: 15px; 
+}
+
+.search {
+    display: flex;                  /* Usar Flexbox para o campo de busca */
+    align-items: center;           /* Alinhar verticalmente ao centro */
+}
+
+.search label {
+    margin-right: 5px;             /* Espaçamento à direita do label */
+}
+
+
+
+
+.reviews-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.review-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review-details {
+    flex: 1;
+}
+
+.review-details h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.review-rating {
+    display: flex;
+    margin: 5px 0;
+}
+
+.star {
+    font-size: 20px;
+    color: #FFD700; /* Amarelo dourado */
+}
+
+.star.gray {
+    color: #ccc; /* Cor para estrelas não preenchidas */
+}
+
+.review-details p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
